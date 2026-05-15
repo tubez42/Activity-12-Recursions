@@ -105,6 +105,21 @@ function doubleArray3(array, index=0) {
 	return array; 
 }
 ```
+| Version 	| Time Complexity | Space Complexity |
+|---------- |:---------------:| ----------------:|
+|Version # 1|	O(n)		  |		O(n)		 |
+|Version # 2|	O(n)		  |		O(1)		 |
+|Version # 3|	O(n)		  |		O(n)		 |
+
+In version # 1 we loop though the array once so the time complexity is O(n). We use a new memory value for each value of the orignal in the function so its space complexity is O(n) as well.
+
+
+In version #2  we loop through the array once fully so the time compelxity is O(n) however were are only modifing the array and not using additonal memory so the space complexity is O (1).
+
+In version #3 we are using a cursive call for every element which has O(n) time complexity. The use of recursion here means that each instance gets added onto the call stack  which means that we are using O(n) space complexity.
+
+
+
 
 
 
